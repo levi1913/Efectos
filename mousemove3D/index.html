@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Efectos</title>
+   
+</head>
+<body>
+
+    <div class="container">
+        <div class="box">
+            <div class="Imagen">
+                <img src="https://picsum.photos/450/300">
+            </div>
+            <div class="text">
+                <h2>Title box</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam commodi omnis fuga
+                     quia maiores inventore, delectus vero eligendi
+                     cumque quae corrupti reiciendis explicabo veritatis obcaecati quam deserunt consectetur. 
+                     Dolore, repellendus?</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="Imagen">
+                <img src="https://picsum.photos/450/300">
+            </div>
+            <div class="text">
+                <h2>Title box</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam commodi omnis fuga
+                     quia maiores inventore, delectus vero eligendi
+                     cumque quae corrupti reiciendis explicabo veritatis obcaecati quam deserunt consectetur. 
+                     Dolore, repellendus?</p>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+    <script type="text/javascript" src="js/vanilla-tilt.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+    <script type="text/javascript">
+        VanillaTilt.init(document.querySelectorAll(".box"), {
+            max: 25,
+            speed: 400
+        });
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+{
+  "name": "efectos",
+  "version": "1.0.0",
+  "description": "Carpeta de efectos",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/levi1913/Efectos.git"
+  },
+  "author": "Dan Levi Torres Morales",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/levi1913/Efectos/issues"
+  },
+  "homepage": "https://github.com/levi1913/Efectos#readme",
+  "dependencies": {
+    "bootstrap": "^4.4.1",
+    "jquery": "^3.5.0"
+  }
+}
