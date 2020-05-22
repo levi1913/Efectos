@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,600&display=swap');
 body{
     margin:0;
     padding: 0;
@@ -98,6 +99,6 @@ h2{
     margin: 0;
     padding: 0;
     font-size: 8em;
-    font-family: sans-serif;
+    font-family: 'Crimson Text', serif;
     transform: translateY(-50%);
 }
