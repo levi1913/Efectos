@@ -1,0 +1,77 @@
+body{
+    margin:0;
+    padding: 0;
+    background: #e4e4e4;
+    font-family: arial;
+}
+.panel{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+.panel h1{
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    font-size: 10em;
+    color: rgba(72, 230, 200, 0.32);
+    background-image: url(ola.png);
+    background-repeat: repeat-x;
+    -webkit-background-clip: text;
+    animation: animacion 10s linear infinite;
+   
+}
+.panel h1::before{
+    content: attr(data);
+    position: absolute;
+    top:115px;
+    left: 0px;
+    transform: rotate(180deg);
+    color: rgba(100, 235, 210, 0.281);
+    background-image: url(sombra.jpg);
+    opacity: .2;
+    background-repeat: repeat-x;
+    -webkit-background-clip: text;
+    animation: animacion2 10s linear infinite;
+}
+@keyframes animacion{
+    0%{
+        background-position: left 0px top 100px;
+    }
+    20%{
+        background-position: left 400px top 15px;
+    }
+    40%{
+        background-position: left 800px top 15px;
+    }
+    60%{
+        background-position: left 1200px top -30px;
+    }
+    80%{
+        background-position: left 1600px top 15px;
+    }
+    100%{
+        background-position: left 2000px top 130px;
+    }
+}
+@keyframes animacion2{
+    0%{
+        background-position: right 0px top 100px;
+    }
+    20%{
+        background-position: right 400px top 15px;
+    }
+    40%{
+        background-position: right 800px top 15px;
+    }
+    60%{
+        background-position: right 1200px top -30px;
+    }
+    80%{
+        background-position: right 1600px top 15px;
+    }
+    100%{
+        background-position: right 2000px top 130px;
+    }
+}
