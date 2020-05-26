@@ -1,0 +1,258 @@
+body,html{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: sans-serif;
+    text-align: center;
+    background: url(img/espacio.jpg);
+    background-size: cover;
+}
+.planetas{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+.planetas{
+    width:220px;
+    height: 220px;
+}
+.tierra{
+    /* Posiciòn */
+    position: absolute;
+    top: 250px;
+    left: -100px;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+
+    width: 250px;
+    height: 250px;
+    background: lightblue;
+    border-radius: 50%;
+    box-shadow: -50px -50px 0 0 rgba(0,0,0,.15) inset,
+                -70px -40px 0 0 rgba(0,0,0,.1) inset;
+    background: url(img/tierra.jpg);
+    background-size: cover;
+    transform: rotate(5deg);
+    -webkit-animation: tierra 8s infinite linear;
+}
+.tierra::before{
+    content: "";
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    background: rgb(53, 50, 50);
+    opacity: .2;
+}
+.tierra:hover::after{
+    content: attr(data);
+    background: whitesmoke;
+    height: auto;
+    width: 400px;
+    position: absolute;
+    top: 0;
+    left: 300px;
+    transform: rotate(-5deg);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: justify;
+
+}
+
+@-webkit-keyframes tierra{
+    from{
+        background-position: left center;
+    }
+    to{
+        background-position: -500px center;
+    }
+}
+
+.luna{
+    /* Posiciòn */
+    position: absolute;
+    top: -50px;
+    left: -300px;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+
+    width: 50px;
+    height: 50px;
+    background: lightblue;
+    border-radius: 50%;
+    box-shadow: -50px -50px 0 0 rgba(0,0,0,.15) inset,
+                -70px -40px 0 0 rgba(0,0,0,.1) inset;  
+    background: black;
+    background-image: url(img/Lunaplana.jpg);
+    background-size: cover;
+    transform: rotate(5deg);
+    
+    -webkit-animation: luna 10s infinite linear,
+                       mover 20s infinite linear ;
+}
+.luna::before{
+    content: "";
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    background: rgb(24, 22, 22);
+    opacity: .2;
+}
+.luna:hover::after{
+    content: attr(data);
+    background: whitesmoke;
+    height: auto;
+    width: 400px;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    transform: rotate(-5deg);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: justify;
+
+}
+@-webkit-keyframes luna{
+    from{
+        background-position: left center;
+    }
+    to{
+        background-position: -390px center;
+    }
+}
+@keyframes mover {
+    0%{
+        
+        left: -300px;
+    }
+    50%{
+   
+        left: 250px;
+    }
+    100%{
+        left: -300px;
+    }
+}
+/* Marte */
+.marte{
+    /* Posiciòn */
+    position: absolute;
+    top: -300px;
+    left: -800px;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+
+    width: 100px;
+    height: 100px;
+    background: rgb(177, 90, 19);
+    border-radius: 50%;
+    box-shadow: -20px -20px 0 0 rgba(0,0,0,.2) inset,
+                -70px -40px 0 0 rgba(0,0,0,.1) inset;  
+    background: black;
+    background-image: url(img/marte.jpg);
+    background-size: cover;
+    transform: rotate(5deg);
+    
+    -webkit-animation: marte 10s infinite linear;
+}
+.marte::before{
+    content: "";
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    background: rgb(196, 90, 20);
+    opacity: .2;
+}
+.marte:hover::after{
+    content: attr(data);
+    background: whitesmoke;
+    height: auto;
+    width: 400px;
+    position: absolute;
+    top: -120px;
+    left: 130px;
+    transform: rotate(-5deg);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: justify;
+
+}
+@-webkit-keyframes marte{
+    from{
+        background-position: left center;
+    }
+    to{
+        background-position: -177px center;
+    }
+}
+
+.jupiter{
+    /* Posiciòn */
+    position: absolute;
+    top: -300px;
+    left: 400px;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+
+    width: 300px;
+    height: 300px;
+    background: rgb(177, 90, 19);
+    border-radius: 50%;
+    box-shadow: -50px -50px 0 0 rgba(0,0,0,.15) inset,
+                -70px -40px 0 0 rgba(0,0,0,.1) inset;  
+    background: black;
+    background-image: url(img/jupiter.jpg);
+    background-size: cover;
+    transform: rotate(10deg);
+    
+    -webkit-animation: jupiter 25s infinite linear;
+}
+.jupiter::before{
+    content: "";
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    background: rgb(163, 92, 44);
+    opacity: .2;
+}
+.jupiter:hover::after{
+    content: attr(data);
+    background: whitesmoke;
+    height: auto;
+    width: 400px;
+    position: absolute;
+    top: 80px;
+    left: -470px;
+    transform: rotate(-10deg);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: justify;
+}
+@-webkit-keyframes jupiter{
+    from{
+        background-position: left center;
+    }
+    to{
+        background-position: -200px center;
+    }
+}
